@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <script src="https://kit.fontawesome.com/81541a646f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./xtwitter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-nav-bar">
+            <div class="empty"></div>
+            <div class="empty1">
+                <a style="text-decoration: none; color: inherit;" href="./dashboard.html"><div class="circle"><i id="ii" class="fa-brands fa-x-twitter"></i></div></a>
+                <a style="text-decoration: none; color: inherit;" href="./dashboard.html"><div class="circle"><i id="ii" class="fa-brands fa-x-twitter"></i></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./dashboard.html"><div class="circle"><img id="aa" src="./home.png" alt=""></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./explore.html"><div class="circle"><i id="ii" class="fa-solid fa-magnifying-glass"></i></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./notifications.html"><div class="circle"><i id="ii" class="fa-solid fa-bell"></i></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./message.html"><div class="circle"><img style="width: 27px;" id="aa" src="./message.png" alt=""></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./grok.html"><div  class="circle"><img id="aa" src="./grok.png" alt=""></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./profile.html"><div class="circle"><i id="ii" class="fa-solid fa-user"></i></div></a>
+                <a  href="#"></a> <div id="popupIcon12" onclick="openPopup1()"  class="circle"><i style="font-size: 24px;" id="ii" class="fa-solid fa-ellipsis"></i></div>
+                <div id="popupIcon" style="background-color: #1d9bf0;" class="circle"  onclick="openPopup()"><i id="ii" class="fa-solid fa-feather" style="color: white;"></i></div>
+                <div id="popupIcon2" class="circle"><div class="circle"><img id="ee" src="./aay.jpg" alt=""></div></div>
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="main-contain">
+                <div class="main-left1">
+                    <div id="notification-bar">
+                        <div class="notification1">
+                            <div class="for_you">Notifications</div>
+                            
+                            <div class="settings"><i class="fa-solid fa-gear"></i></div>
+                        </div>
+                        <div class="notification1">
+                            <div id="underline" class="notification-class"><p>All</p></div>
+                            <div id="underline" class="notification-class"><p>Verified</p></div>
+                            <div id="underline" class="notification-class"><p>Mentions</p></div>
+                        </div>
+                    </div>
+                    <div class="follow-notification">
+                            <div class="inn-notif">
+                                    <div class="notif-left"><i class="fa-solid fa-bell" style="color: #1d9bf0;"></i></div>
+                                    <div class="notif-right">
+                                        <div class="TT">
+                                            <div class="small-round"><img class="small-round" src="./khan.jpg" alt=""></div>
+                                            <div class="small-round"><img class="small-round" src="./insta.jpg" alt=""></div>
+                                            <div class="small-round"><img class="small-round" src="./fight.jpg" alt=""></div>
+                                            <div class="small-round"><img class="small-round" src="./eng.jpg" alt=""></div>
+                                            <div class="small-round"><img class="small-round" src="./frizzu.jpg" alt=""></div>
+                                            <div class="small-round"><img class="small-round" src="./ogb.jpg" alt=""></div>
+                                            <div class="small-round"><img class="small-round" src="./he.jpg" alt=""></div>
+                                            <div class="small-round"><img class="small-round" src="./zGtToA_t_400x400.jpg" alt=""></div>
+                                        </div>
+                                        <div class="BB">
+                                            <p>New post notifications for 
+                                                𝐆𝐚𝐢𝐧 𝐏𝐥𝐮𝐠 𝕏
+                                                 and 6 others</p>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="follow-notification2">
+                        <div class="inn-notif">
+                                <div class="notif-left"><i class="fa-solid fa-heart" style="color: #f91880;"></i></div>
+                                <div class="notif-right">
+                                    <div class="TT1">
+                                        <div class="small-round"><img class="small-round" src="./khan.jpg" alt=""></div>
+                                        <br>
+                                    </div>
+                                    <div class="BB">
+                                        <p>
+                                            <span style="font-weight: bold; margin-bottom: 20px;"  >Abdul Haseeb</span>
+                                             liked 2 of your posts</p>
+                                        <p>Yes Sure</p>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="follow-notification2">
+                    <div class="inn-notif">
+                            <div class="notif-left"><i class="fa-solid fa-retweet" style="color: green;"></i></div>
+                            <div class="notif-right">
+                                <div class="TT1">
+                                    <div class="small-round"><img class="small-round" src="./manish.jpg" alt=""></div>
+                                    <br>
+                                </div>
+                                <div class="BB">
+                                    <p>
+                                        
+                                         
+                                        <span style="font-weight: bold; margin-bottom: 20px;"  >Real maish ™</span>
+                                        reposted your post</p>
+                                    <p>That you were too busy to see their WhatsApp status</p>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+                    <div class="follow-notification1">
+                        <div class="inn-notif">
+                                <div class="notif-left"><i class="fa-solid fa-user"  style="color: #1d9bf0;"></i></div>
+                                <div class="notif-right">
+                                    <div class="TT">
+                                        <div class="small-round"><img class="small-round" src="./khan.jpg" alt=""></div>
+                                        <div class="small-round"><img class="small-round" src="./VFbkQJ6l_400x400.jpg" alt=""></div>
+                                        <div class="small-round"><img class="small-round" src="./frizzu.jpg" alt=""></div>
+                                    </div>
+                                    <div class="BB">
+                                        <p>console.log(everything)
+                                             and 2 others followed you</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="follow-notification1">
+                        <div class="inn-notif">
+                                <div class="notif-left"><i class="fa-solid fa-user"  style="color: #1d9bf0;"></i></div>
+                                <div class="notif-right">
+                                    <div class="TT">
+                                        <div class="small-round"><img class="small-round" src="./man.jpg" alt=""></div>
+                                    </div>
+                                    <div class="BB">
+                                        <p>
+                                            Anthony Soon 
+                                            👨‍💻
+                                             followed you</p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="follow-notification2">
+                        <div class="inn-notif">
+                                <div class="notif-left"><i class="fa-solid fa-microphone" style="color: #7856ff;"></i></div>
+                                <div class="notif-right">
+                                    <div class="TT1">
+                                        <div class="small-round"><img class="small-round" src="./shiba.png" alt=""></div>
+                                        <br>
+                                    </div>
+                                   
+                                    <div class="BB">
+                                        <p>
+                                            <span style="font-weight: bold; margin-bottom: 20px;"  >Elja is speaking </span>
+                                            in No FOMO but...have you heard of #Ethscriptions
+                                            <span style="font-weight: bold; margin-bottom: 20px;"  > 🦑🏗 #ittybits #mfpurrs</span></p>
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div> 
+                    <div class="follow-notification3">
+                        <div class="inn-notif">
+                                <div class="notif-left"><i class="fa-solid fa-heart" style="color: #f91880;"></i></div>
+                                <div class="notif-right">
+                                    <div class="TT1">
+                                        <div class="small-round"><img class="small-round" src="./waris.jpg" alt=""></div>
+                                        <div class="small-round"><img class="small-round" src="./kizza.jpg" alt=""></div>
+                                        <br>
+                                    </div>
+                                   
+                                    <div class="BB">
+                                        <p>
+                                            <span style="font-weight: bold; margin-bottom: 20px;"  >Wa Ris</span>
+                                            and
+                                            <span style="font-weight: bold; margin-bottom: 20px; margin-right: 10px;"  > kizza</span>liked your reply</p>
+                                            <p>3million for ibadan e don do me; <br>
+                                                500k for UK? E no do me.<br>
+                                                
+                                                who remember?
+                                                <br>
+                                                
+                                                Lyric 🎶</p>
+                                        </p>
+                                    </div>
+                                </div>
+                        </div>
+                </div> 
+               
+            <div class="follow-notification2">
+                <div class="inn-notif">
+                        <div class="notif-left"><i class="fa-solid fa-heart" style="color: #f91880;"></i></div>
+                        <div class="notif-right">
+                            <div class="TT1">
+                                <div class="small-round"><img class="small-round" src="./khan.jpg" alt=""></div>
+                                <br>
+                            </div>
+                            <div class="BB">
+                                <p>
+                                    <span style="font-weight: bold; margin-bottom: 20px;"  >Abdul Haseeb</span>
+                                     liked 2 of your posts</p>
+                                <p>Yes Sure</p>
+                            </div>
+                        </div>
+                </div>
+        </div>
+        <div class="follow-notification2">
+            <div class="inn-notif">
+                    <div class="notif-left"><i class="fa-solid fa-retweet" style="color: green;"></i></div>
+                    <div class="notif-right">
+                        <div class="TT1">
+                            <div class="small-round"><img class="small-round" src="./manish.jpg" alt=""></div>
+                            <br>
+                        </div>
+                        <div class="BB">
+                            <p>
+                                
+                                 
+                                <span style="font-weight: bold; margin-bottom: 20px;"  >Real maish ™</span>
+                                reposted your post</p>
+                            <p>That you were too busy to see their WhatsApp status</p>
+                        </div>
+                    </div>
+            </div>
+    </div>
+               
+                   
+                    
+                    
+                  
+                </div>
+                <div class="main-right">
+                    <div class="search">
+                        <div class="left-search"><i class="fa-solid fa-magnifying-glass" style="color: #1d9bf0"></i></div>
+                        <div class="inp-search"><input style="background-color: #eff3f4; border: none;" id="searchbar" type="search"></div>
+                    </div>
+                    <div class="subscribe">
+                        <div class="sub-scribe">
+                            <h2>Subscribe to Premium</h2>
+                            <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                            <button class="btn-aa">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="live">
+                        <h2>Live on X</h2>
+                        <div class="rt">
+                            <div class="Speaker-Name">
+                                <img style="margin-top: 5px; cursor: pointer;" id="eee" src="./aay.jpg" alt="">
+                                <p>Daddieshinor is speaking </p> 
+                            </div>
+                        
+                         <div style="display: flex; justify-content: space-evenly;">
+                            <div style="width: 193px; height: 57px; font-weight: 900;">MMX Crypto & Technology #XRP #BTC “Utility Crypto” World Politics</div>
+                            <div style="width: 108px; height: 57px; background-color: aliceblue;">
+                                <div style="width: 112px; height: 32px; display: flex; justify-content: center; align-items: center; border-radius: 4px;">
+                                    <div style="width: 72px; height: 32px;">
+                                        <img style="margin-top: 5px; cursor: pointer;" id="eee" src="./aay.jpg" alt="">
+                                    </div>
+                                    <div style="width: 32px; height: 16px;">+135</div>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <div class="inn-trend">
+                        <div class="trend-header"> 
+                            <h2>Trends for you</h2> 
+                        </div>
+                        <div class="trend-LG">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Sports∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Cristiano</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>50.3k posts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Only on X∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Ondo</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>26.3k posts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Music∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Metro</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>117.3k posts</p>
+                                </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Music∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Metro</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>117.3k posts</p>
+                                </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Music∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Metro</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>117.3k posts</p>
+                                </div>
+                        </div>
+                        <div class="trend-more"><p>Show more</p></div>  
+                            </div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                
+                 </div>
+                    <div class="follow">
+                   
+
+                    </div>
+                    <div class="follow"></div>
+        
+    </div>
+    
+</body>
+</html>

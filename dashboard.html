@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <script defer src="./xtwitter.js"></script> 
+    <script src="https://kit.fontawesome.com/81541a646f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./xtwitter.css">
+</head>
+<style>
+
+     @media (max-width:375px){
+        #BBLL{
+            display: none;
+        }
+
+        #BBL{
+            display: block;
+            z-index: 9999;
+        }
+       
+           
+        }
+    
+    /* @media (max-width:600px){}
+    @media (max-width:768px) {} */
+</style>
+<body>
+    <div  id="BBLL" class="container">
+        <div class="left-nav-bar">
+            <div class="empty"></div>
+            <div class="empty1">
+                <a style="text-decoration: none; color: inherit;" href="./dashboard.html"><div class="circle"><i id="ii" class="fa-brands fa-x-twitter"></i></div></a>
+                <a style="text-decoration: none; color: inherit;" href="./dashboard.html"><div class="circle"><i id="ii" class="fa-brands fa-x-twitter"></i></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./dashboard.html"><div class="circle"><img id="aa" src="./home.png" alt=""></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./explore.html"><div class="circle"><i id="ii" class="fa-solid fa-magnifying-glass"></i></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./notifications.html"><div class="circle"><i id="ii" class="fa-solid fa-bell"></i></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./message.html"><div class="circle"><img style="width: 27px;" id="aa" src="./message.png" alt=""></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./grok.html"><div  class="circle"><img id="aa" src="./grok.png" alt=""></div></a>
+                <a style="text-decoration: none; color: inherit;"  href="./profile.html"><div class="circle"><i id="ii" class="fa-solid fa-user"></i></div></a>
+                <a  href="#"></a> <div id="popupIcon12" onclick="openPopup1()"  class="circle"><i style="font-size: 24px;" id="ii" class="fa-solid fa-ellipsis"></i></div>
+                <div id="popupIcon" style="background-color: #1d9bf0;" class="circle"  onclick="openPopup()"><i id="ii" class="fa-solid fa-feather" style="color: white;"></i></div>
+                <div id="popupIcon2" class="circle"><div class="circle"><img id="ee" src="./aay.jpg" alt=""></div></div>
+                
+            </div>
+        </div>
+        <div class="right-main">
+            <div class="main-contain">
+                <div class="main-left">
+                    <div class="head1">
+                        <div class="for_you">For you</div>
+                        <div class="following">Following</div>
+                        <div class="settings"><i class="fa-solid fa-gear"></i></div>
+                    </div>
+                    <div class="type">
+                        <div class="type-container">
+                            <div class="left-type">
+                                <img style="margin-top: 5px; cursor: pointer;" id="ee" src="./aay.jpg" alt="">
+                            </div>
+                            <div class="right-type">
+                                <div class="top-type">
+                                    <input id="inpp" type="search" placeholder="What is happening?!">
+                                </div>
+                                <div class="bottom-type">
+                                    <div class="bb-type">
+                                        <div class="every-one">
+                                            <div class="one-every">
+                                            <div style="cursor: pointer;"><i style="margin-left: 5px; margin-top: 3px; margin-right: 5px; height: 24px; border-radius: 25%;" class="fa-solid fa-earth-americas"></i>Everyone can reply</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="up-type">
+                                        <div class="upp-type">
+                                            <div style="width: 200px; display: flex; justify-content: space-evenly; align-items: center; align-items: center;">
+                                                <div id="kk"><i class="fa-solid fa-image" style="color: #1d9bf0;"></i></div>
+                                                <div id="kk"></div>
+                                                <div id="kk"><i class="fa-solid fa-square-poll-vertical" style="color: #1d9bf0;"></i></div>
+                                                <div id="kk"><i class="fa-solid fa-face-smile" style="color: #1d9bf0;"></i></div>
+                                                <div id="kk"><i class="fa-regular fa-calendar" style="color: #1d9bf0;"></i></div>
+                                                <div id="kk"><i class="fa-solid fa-location-dot" style="color: #1d9bf0;"></i></div>
+                                            </div>
+                                            <div style="margin-top: 10px; margin-left: 240px; width: 66px; height: 36px; ">
+                                                <button class="post-btn">POST</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postt">
+                        <div class="sub-postt">
+                            <div class="sub-up">
+                                <div style="margin-left: 30px;"><i class="fa-solid fa-retweet" style="color: #cacfd3;"></i></div>
+                                <p style="margin-left: 10px;"><span style="font-style: italic; font-weight: 500px;">Joeboy</span> reposted</p>
+                            </div>
+                            <div class="sub-low">
+                                <div class="left-sub">
+                                    <div class="circle"><img id="ee" src="./aay.jpg" alt=""></div>
+                                </div>
+                                <div class="right-sub">
+                                    <div style="margin-top: 20px;" id="upp"><span style="font-weight: bold;">AutomobilPoacher</span> @Auto_poacher · 1h</div>
+                                    <div id="upp">
+                                        <div><p>Na wizkid born you ? Werey</p></div>
+                                    </div>
+                                    <div id="contain">
+                                        <video id="player"  controls>
+                                            <source src="./ssstwitter.com_1703846392060.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                          </video>
+                                          <!-- <div class="custom-controls">
+                                            <button id="playPauseBtn">Play/Pause</button>
+                                            <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+                                            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                                            <button id="fullScreenBtn">Fullscreen</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-foot">
+                                <div><i class="fa-regular fa-message" style="color: #cacfd3;"></i>6</div>
+                                <div><i class="fa-solid fa-retweet" style="color: #cacfd3;">4</i></div>
+                                <div><i class="fa-regular fa-heart"  style="color: #cacfd3;"></i></div>
+                                <div><i class="fa-solid fa-chart-simple"></i></div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <div style="margin-right: 5px;"><i class="fa-regular fa-bookmark"></i></div>
+                                    <div><i class="fa-solid fa-share-from-square"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postt2">
+                        <div class="sub-postt1">
+                            <div class="sub-up">
+                                <div style="margin-left: 30px;"><i class="fa-solid fa-retweet" style="color: #cacfd3;"></i></div>
+                                <p style="margin-left: 10px;"><span style="font-style: italic; font-weight: 500px;"></span> </p>
+                            </div>
+                            <div class="sub-low">
+                                <div class="left-sub1">
+                                    <div class="circle"><img id="ee" src="./aay.jpg" alt=""></div>
+                                </div>
+                                <div class="right-sub1">
+                                    <div style="margin-top: 20px;" id="upp"><span style="font-weight: bold;">Kara</span> @UTDKara · 1h</div>
+                                    <div id="upp">
+                                        <div><p>Mason Greenwood against Espanyol. You have complete player you still <br>
+                                             wanna waste money on Olise <br>
+
+                                            Make it make sense 🤦🏾</p></div>
+                                    </div>
+                                    <div id="contain1">
+                                        <video id="player1"  controls>
+                                            <source src="./ssstwitter.com_1704648832882.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                          </video>
+                                          <!-- <div class="custom-controls">
+                                            <button id="playPauseBtn">Play/Pause</button>
+                                            <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+                                            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                                            <button id="fullScreenBtn">Fullscreen</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-foot">
+                                <div><i class="fa-regular fa-message" style="color: #cacfd3;"></i>6</div>
+                                <div><i class="fa-solid fa-retweet" style="color: #cacfd3;">4</i></div>
+                                <div><i class="fa-regular fa-heart"  style="color: #cacfd3;"></i></div>
+                                <div><i class="fa-solid fa-chart-simple"></i></div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <div style="margin-right: 5px;"><i class="fa-regular fa-bookmark"></i></div>
+                                    <div><i class="fa-solid fa-share-from-square"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postt">
+                        <div class="sub-postt">
+                            <div class="sub-up">
+                                <div style="margin-left: 30px;"><i class="fa-solid fa-retweet" style="color: #cacfd3;"></i></div>
+                                <p style="margin-left: 10px;"><span style="font-style: italic; font-weight: 500px;">Joeboy</span> reposted</p>
+                            </div>
+                            <div class="sub-low">
+                                <div class="left-sub">
+                                    <div class="circle"><img id="ee" src="./aay.jpg" alt=""></div>
+                                </div>
+                                <div class="right-sub">
+                                    <div style="margin-top: 20px;" id="upp"><span style="font-weight: bold;">AutomobilPoacher</span> @Auto_poacher · 1h</div>
+                                    <div id="upp">
+                                        <div><p>Na wizkid born you ? Werey</p></div>
+                                    </div>
+                                    <div id="contain">
+                                        <video id="player"  controls>
+                                            <source src="./ssstwitter.com_1703846392060.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                          </video>
+                                          <!-- <div class="custom-controls">
+                                            <button id="playPauseBtn">Play/Pause</button>
+                                            <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+                                            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                                            <button id="fullScreenBtn">Fullscreen</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-foot">
+                                <div><i class="fa-regular fa-message" style="color: #cacfd3;"></i>6</div>
+                                <div><i class="fa-solid fa-retweet" style="color: #cacfd3;">4</i></div>
+                                <div><i class="fa-regular fa-heart"  style="color: #cacfd3;"></i></div>
+                                <div><i class="fa-solid fa-chart-simple"></i></div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <div style="margin-right: 5px;"><i class="fa-regular fa-bookmark"></i></div>
+                                    <div><i class="fa-solid fa-share-from-square"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="postt">
+                        <div class="sub-postt">
+                            <div class="sub-up">
+                                <div style="margin-left: 30px;"><i class="fa-solid fa-retweet" style="color: #cacfd3;"></i></div>
+                                <p style="margin-left: 10px;"><span style="font-style: italic; font-weight: 500px;">Joeboy</span> reposted</p>
+                            </div>
+                            <div class="sub-low">
+                                <div class="left-sub">
+                                    <div class="circle"><img id="ee" src="./aay.jpg" alt=""></div>
+                                </div>
+                                <div class="right-sub">
+                                    <div style="margin-top: 20px;" id="upp"><span style="font-weight: bold;">AutomobilPoacher</span> @Auto_poacher · 1h</div>
+                                    <div id="upp">
+                                        <div><p>Na wizkid born you ? Werey</p></div>
+                                    </div>
+                                    <div id="contain">
+                                        <video id="player"  controls>
+                                            <source src="./ssstwitter.com_1703846392060.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                          </video>
+                                          <!-- <div class="custom-controls">
+                                            <button id="playPauseBtn">Play/Pause</button>
+                                            <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+                                            <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+                                            <button id="fullScreenBtn">Fullscreen</button>
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-foot">
+                                <div><i class="fa-regular fa-message" style="color: #cacfd3;"></i>6</div>
+                                <div><i class="fa-solid fa-retweet" style="color: #cacfd3;">4</i></div>
+                                <div><i class="fa-regular fa-heart"  style="color: #cacfd3;"></i></div>
+                                <div><i class="fa-solid fa-chart-simple"></i></div>
+                                <div style="display: flex; justify-content: center; align-items: center;">
+                                    <div style="margin-right: 5px;"><i class="fa-regular fa-bookmark"></i></div>
+                                    <div><i class="fa-solid fa-share-from-square"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            
+            
+                <div class="main-right">
+                    <div class="search">
+                        <div class="left-search"><i class="fa-solid fa-magnifying-glass" style="color: #1d9bf0"></i></div>
+                        <div class="inp-search"><input style="background-color: #eff3f4; border: none;" id="searchbar" type="search"></div>
+                    </div>
+                    <div class="subscribe">
+                        <div class="sub-scribe">
+                            <h2>Subscribe to Premium</h2>
+                            <p>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                            <button class="btn-aa">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="live">
+                        <h2>Live on X</h2>
+                        <div class="rt">
+                            <div class="Speaker-Name">
+                                <img style="margin-top: 5px; cursor: pointer;" id="eee" src="./aay.jpg" alt="">
+                                <p>Daddieshinor is speaking </p> 
+                            </div>
+                        
+                         <div style="display: flex; justify-content: space-evenly;">
+                            <div style="width: 193px; height: 57px; font-weight: 900;">MMX Crypto & Technology #XRP #BTC “Utility Crypto” World Politics</div>
+                            <div style="width: 108px; height: 57px; background-color: aliceblue;">
+                                <div style="width: 112px; height: 32px; display: flex; justify-content: center; align-items: center; border-radius: 4px;">
+                                    <div style="width: 72px; height: 32px;">
+                                        <img style="margin-top: 5px; cursor: pointer;" id="eee" src="./aay.jpg" alt="">
+                                    </div>
+                                    <div style="width: 32px; height: 16px;">+135</div>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <div class="inn-trend">
+                        <div class="trend-header"> 
+                            <h2>Trends for you</h2> 
+                        </div>
+                        <div class="trend-LG">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Sports∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Cristiano</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>50.3k posts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Only on X∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Ondo</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>26.3k posts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Music∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Metro</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>117.3k posts</p>
+                                </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Music∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Metro</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>117.3k posts</p>
+                                </div>
+                        </div>
+                        <div class="trend-SM">
+                            <div class="section-trend">
+                                <div class="tile-1">
+                                    <div id="trend-category"><p>Music∙Trending</p></div>
+                                    <div id="see-more"><i class="fa-solid fa-ellipsis" style="color: #5d6d79;"></i></div>
+                                </div>
+                                <div class="tile-2">
+                                    <p style="font-weight: bold; font-size: 20px;">Metro</p>
+                                </div>
+                                <div class="tile-3">
+                                    <p>117.3k posts</p>
+                                </div>
+                        </div>
+                        <div class="trend-more"><p>Show more</p></div>  
+                            </div>
+                            </div>
+                       
+                        </div>
+                    </div>
+                
+                 </div>
+                    <div class="follow">
+                   
+
+                    </div>
+                    <div class="follow"></div>
+        
+    </div>
+    <div style="display: none;" id="popup1" class="popup-mem">
+        <div class="popup-head">
+            <div onclick="closePopup()" class="cont-close"><span class="close1">&times;</span></div>
+            <div><button class="btn-pop">Draft</button></div>
+        </div>
+        <div class="popup-content">
+            <div class="popup-left"> <img style="margin-top: 5px; cursor: pointer;" id="ee" src="./aay.jpg" alt=""></div>
+            <div class="popup-right"><input id="inpp1" type="search" placeholder="What is happening?!"></div>
+        </div>
+        <div class="popup-foot">
+            <div class="foot-up">
+                <div class="every-one1">
+                <div class="one-every1">
+                <div style="cursor: pointer;"><i style="color: #1d9bf0;  margin-left: 5px; margin-top: 3px; margin-right: 5px; height: 24px; border-radius: 25%;" class="fa-solid fa-earth-americas"></i>Everyone can reply</div>
+                </div>
+            </div>
+            <div class="foot-below">
+                <div style="width: 200px; display: flex; justify-content: space-evenly; align-items: center; align-items: center;">
+                    <div id="kk"><i class="fa-solid fa-image" style="color: #1d9bf0;"></i></div>
+                    <div id="kk"><i class="fa-solid fa-image" style="color: #1d9bf0;"></i></div>
+                    <div id="kk"><i class="fa-solid fa-square-poll-vertical" style="color: #1d9bf0;"></i></div>
+                    <div id="kk"><i class="fa-solid fa-face-smile" style="color: #1d9bf0;"></i></div>
+                    <div id="kk"><i class="fa-regular fa-calendar" style="color: #1d9bf0;"></i></div>
+                    <div id="kk"><i class="fa-solid fa-location-dot" style="color: #1d9bf0;"></i></div>
+                </div>
+                <div style="margin-top: 10px; margin-left: 240px; width: 66px; height: 36px; ">
+                    <button class="post1-btn">POST</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <div style="display: none;" id="morr" class="more1">
+        <div class="more-divide">Add an existing account</div>
+        <div class="more-divide">Log out @Aaytriple </div>
+    </div>
+
+    <!--  -->
+            <div style="display: none;" id="preview" class="more">
+            <div class="more-col">
+                <div class="up-more"><i class="fa-regular fa-rectangle-list"></i></div>
+                <div class="low-more">Lists</div>
+             </div>
+            <div class="more-col">
+                <div class="up-more"><img style="width: 24px; height: 24px;" src="./Screenshot (97).png" alt=""></i></div>
+                <div class="low-more">Premium</div>
+            </div>
+            <div class="more-col">
+                <div class="up-more"><i class="fa-solid fa-bookmark"></i></i></div>
+                <div class="low-more">Bookmarks</div>
+            </div>
+            <div class="more-col">
+                <div class="up-more"><i class="fa-regular fa-rectangle-list"></i></div>
+                <div class="low-more">Communities</div>
+            </div>
+            <div class="more-col">
+                <div class="up-more"><i class="fa-solid fa-money-bill"></i></div>
+                <div class="low-more">Monetization</div>
+            </div>
+            <div class="more-col1">
+                <div class="frame-more">
+                <div class="left-more">Creator Studio</i></div>
+                <div class="right-more"><i class="fa-solid fa-angle-down"></i></div>
+                </div>
+                
+            </div>
+            <div class="more-col1">
+                <div class="frame-more">
+                <div class="left-more">Professional Tools</i></div>
+                <div class="right-more"><i class="fa-solid fa-angle-down"></i></div>
+                </div>
+                
+            </div>
+            <div class="more-col1">
+                <div class="frame-more">
+                <div class="left-more">Settings and Support</i></div>
+                <div class="right-more"><i class="fa-solid fa-angle-down"></i></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- MEDIA QUERY FOR MOBILE -->
+        <div style="display: none;" id="BBL" class="mobileresponsive">
+            <div class="mobileHeader">
+                <div class="bigHeader">  
+                    <img id="ee_pic" src="./aay.jpg" alt=""></div>
+                <div class="smallHeader">
+                    <i id="hh_pic" class="fa-brands fa-x-twitter"></i></div>
+                <div class="bigHeader" style=" justify-content: left; ">
+                    <i id="gg_pic" class="fa-solid fa-gear">
+    
+                    </i></div>
+    
+            </div>
+            <div class="mobile_foryou">
+                <div class="mobile_left">For you</div>
+                <div class="mobile_right">Following</div>
+            </div>
+            <div class="mobile_listeners"></div>
+            <div class="showMore">
+                show 210 posts
+            </div>
+            <div class="tweetPost">
+                <div class="letfSide">
+                    <img id="mobile-img" src="./yaba.jpg" alt="">
+                </div>
+                <div class="rightSide">
+                    <div class="tweepName">
+                        <span>YabaLeftOnline</span><div>
+                        <img src="" alt=""></div>
+                        <span>@yabaleftonline</span>
+                        <span>·
+                            25m</span>
+                            <div style="margin-left: 10px;"><i class="fa-solid fa-ellipsis"></i></div>
+                    </div>
+                    <div class="tweepContent">
+                        <span>‘A dream come true’  — Yemi Alade to perform at AFCON 2023.</span>
+                    </div>
+                    <div class="contentMedia">
+                        <img id="contentImage" src="./yemi.jpg" alt="">
+                    </div>
+                    <div class="contentAddress">
+                        <span> From  <span style="font-weight: bold;">Daddyslittlegirl</span>
+                            </span>
+                    </div>
+                    <div class="contentReaction">
+                        <div id="reactionBox"><img id="reactionBox1" src="./messageIcon.png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./retweetIcon.png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./loveIcon.png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./impressionIcon].png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./share button.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweetPost">
+                <div class="letfSide">
+                    <img id="mobile-img" src="./trey.jpg" alt="">
+                </div>
+                <div class="rightSide">
+                    <div class="tweepName">
+                        <span>Trey</span><div>
+                        <img src="" alt=""></div>
+                        <span>@UTDTrey</span>
+                        <span>·
+                            25m</span>
+                            <div style="margin-left: 10px;"><i class="fa-solid fa-ellipsis"></i></div>
+                    </div>
+                    <div class="tweepContent">
+                        <span>Give me penalties or I retire</span>
+                    </div>
+                    <div class="contentMedia">
+                        <img id="contentImage" src="./GDubrsZWEAE1mFX.jpg" alt="">
+                    </div>
+                    <div class="contentAddress">
+                        <span> From  <span style="font-weight: bold;">Daddyslittlegirl</span>
+                            </span>
+                    </div>
+                    <div class="contentReaction">
+                        <div id="reactionBox"><img id="reactionBox1" src="./messageIcon.png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./retweetIcon.png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./loveIcon.png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./impressionIcon].png" alt=""></div>
+                        <div id="reactionBox"><img id="reactionBox1" src="./share button.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileFooter">
+                <div class="mobileButton_Icon"><img src="./homeICON.png" alt=""></div>
+                <div class="mobileButton_Icon"><img src="./magnifierIcon.png" alt=""></div>
+                <div class="mobileButton_Icon"><img src="./grokIcon.png" alt=""></div>
+                <div class="mobileButton_Icon"><img src="./notificationIcon.png" alt=""></div>
+                <div class="mobileButton_Icon"><img src="./messIcon.png" alt=""></div>
+    
+            </div>
+            
+        </div>
+        <!-- MEDIA QUERY FOR MOBILE -->
+    
+</body>
+</html>
+<script>
+// Event listener for the icon click to trigger the popup
+document.getElementById('popupIcon').addEventListener('click', function() {
+  var popupContainer = document.getElementById('popup1');
+  popupContainer.style.display = 'block'; // Show the popup when icon is clicked
+});
+
+// Event listener for closing the popup
+document.querySelector('.close1').addEventListener('click', function() {
+  var popupContainer = document.getElementById('popup1');
+  popupContainer.style.display = 'none'; // Hide the popup when close button is clicked
+});
+
+
+function showPopup() {
+      // Display the popup by changing its display style property
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      // Hide the popup by changing its display style property
+      document.getElementById('popup').style.display = 'none';
+    }
+
+
+  </script>
